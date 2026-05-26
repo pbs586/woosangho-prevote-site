@@ -1109,7 +1109,8 @@
         <img class="hero-banner" src="20260304_페이스북_스킨_최종.png" alt="강원도가 특별해지는 순간 — 대통령이 보낸 사람, 기호 1번 우상호 더불어민주당 강원특별자치도지사 후보">
     </section>
 
-    <!-- D-Day 카운트다운 리본 -->
+    <!-- D-Day 카운트다운 리본 (사전투표 시작 전까지 비활성화) -->
+    <!--
     <section class="dday-ribbon">
         <div class="dday-inner">
             <div class="dday-label">
@@ -1128,6 +1129,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- 핵심 정보 스트립 -->
     <section class="info-strip">
@@ -3891,6 +3893,7 @@
             });
         }
 
+        /*
         // ── D-Day 카운트다운 (사전투표 시작: 2026-05-29 06:00 / 종료: 05-30 18:00 / 본투표: 06-03 06:00) ──
         function updateCountdown() {
             const now = new Date();
@@ -3936,6 +3939,7 @@
                 statusEl.style.display = 'none';
             }
         }
+        */
 
 
 
@@ -3957,8 +3961,8 @@
             renderTeamGallery();
             renderStations(prevoteStations);
 
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
+            // updateCountdown();
+            // setInterval(updateCountdown, 1000);
 
             setupRevealObserver();
         });
