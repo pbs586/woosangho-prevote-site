@@ -1191,36 +1191,7 @@
         </div>
     </main>
 
-    <!-- 플로팅 공유 버튼 -->
-    <div class="share-fab">
-        <div class="share-menu" id="shareMenu">
-            <button class="share-item" data-share="kakao">
-                <span class="share-item-icon kakao">K</span>
-                <span>카카오톡 공유</span>
-            </button>
-            <button class="share-item" data-share="facebook">
-                <span class="share-item-icon facebook">f</span>
-                <span>페이스북 공유</span>
-            </button>
-            <button class="share-item" data-share="link">
-                <span class="share-item-icon link">⟗</span>
-                <span>링크 복사</span>
-            </button>
-        </div>
-        <button class="share-trigger" id="shareTrigger" aria-label="공유하기">
-            <span class="share-trigger-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="18" cy="5" r="3"></circle>
-                    <circle cx="6" cy="12" r="3"></circle>
-                    <circle cx="18" cy="19" r="3"></circle>
-                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-                </svg>
-            </span>
-            <span class="share-trigger-text">친구에게 공유하기</span>
-        </button>
-    </div>
-    <div class="toast" id="toast">링크가 복사되었습니다</div>
+
 
     <!-- 푸터 -->
     <footer>
@@ -3966,68 +3937,7 @@
             }
         }
 
-        // ── 공유 기능 ──
-        function setupShare() {
-            const trigger = document.getElementById('shareTrigger');
-            const menu = document.getElementById('shareMenu');
-            const toast = document.getElementById('toast');
 
-            const showToast = (msg) => {
-                toast.textContent = msg;
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 2200);
-            };
-
-            const url = window.location.href;
-            const title = document.title;
-            const text = '강원도가 특별해지는 순간 — 사전투표 5.29(금)~5.30(토). 우리 동네 사전투표소 한 번에 확인하세요.';
-
-            trigger.addEventListener('click', async () => {
-                // 모바일에서 Web Share API 사용 가능하면 네이티브 시트 (카톡 포함됨)
-                if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
-                    try {
-                        await navigator.share({ title, text, url });
-                        return;
-                    } catch (e) { /* 사용자 취소 등 */ }
-                }
-                const open = menu.classList.toggle('open');
-                trigger.classList.toggle('open', open);
-            });
-
-            document.addEventListener('click', (e) => {
-                if (!trigger.contains(e.target) && !menu.contains(e.target)) {
-                    menu.classList.remove('open');
-                    trigger.classList.remove('open');
-                }
-            });
-
-            menu.querySelectorAll('.share-item').forEach(item => {
-                item.addEventListener('click', async () => {
-                    const type = item.dataset.share;
-                    if (type === 'link') {
-                        try {
-                            await navigator.clipboard.writeText(url);
-                            showToast('✓ 링크가 복사되었습니다');
-                        } catch (e) {
-                            showToast('링크 복사에 실패했습니다');
-                        }
-                    } else if (type === 'facebook') {
-                        window.open(
-                            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
-                            'fb-share', 'width=600,height=500'
-                        );
-                    } else if (type === 'kakao') {
-                        // Kakao SDK 미적재 환경 대비 — 카카오스토리 공유 URL로 폴백, 동시에 링크 복사 안내
-                        try { await navigator.clipboard.writeText(url); } catch (e) {}
-                        const kakaoStory = `https://story.kakao.com/share?url=${encodeURIComponent(url)}`;
-                        window.open(kakaoStory, 'kakao-share', 'width=600,height=600');
-                        showToast('✓ 링크 복사됨 — 카톡 채팅창에 붙여넣으세요');
-                    }
-                    menu.classList.remove('open');
-                    trigger.classList.remove('open');
-                });
-            });
-        }
 
         // ── 스크롤 페이드인 (IntersectionObserver) ──
         function setupRevealObserver() {
@@ -4050,7 +3960,6 @@
             updateCountdown();
             setInterval(updateCountdown, 1000);
 
-            setupShare();
             setupRevealObserver();
         });
 
