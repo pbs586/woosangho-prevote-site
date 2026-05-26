@@ -1183,7 +1183,7 @@
             <div class="stations-count">총 <span id="countSpan">0</span>개의 투표소</div>
         </div>
 
-        <div class="stations-grid reveal-stagger" id="stationsGrid">
+        <div class="stations-grid" id="stationsGrid">
             <div class="no-results" id="noResults">
                 <h3>조회 조건에 맞는 사전투표소가 없습니다.</h3>
                 <p>검색어나 시·군 선택을 다시 확인해 주시기 바랍니다.</p>
@@ -3948,7 +3948,7 @@
                         io.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            }, { threshold: 0.01, rootMargin: '0px 0px -10px 0px' });
 
             document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
         }
