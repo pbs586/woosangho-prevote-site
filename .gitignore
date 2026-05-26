@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Local data / scratch
+scratch/
+*.xlsx
+*.xls
+*.csv
+
+# Node (이후 빌드툴 도입 시)
+node_modules/
+dist/
+.cache/

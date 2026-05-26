@@ -1,0 +1,4141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>우상호 · 강원특별자치도지사 후보 — 사전투표소 안내</title>
+
+    <!-- Open Graph / 카카오톡·페이스북 공유용 메타 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="우상호 · 강원특별자치도지사 후보">
+    <meta property="og:description" content="강원도가 특별해지는 순간. 사전투표 5.29(금)~5.30(토) — 강원특별자치도 사전투표소 안내">
+    <meta property="og:image" content="woosangho.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="우상호 · 강원특별자치도지사 후보">
+    <meta name="twitter:description" content="강원도가 특별해지는 순간. 사전투표 5.29(금)~5.30(토)">
+    <meta name="twitter:image" content="woosangho.jpg">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    
+    <style>
+        /* ── 캠페인 블루 톤 디자인 토큰 ── */
+        :root {
+            --minjoo-blue: #0a2d6c;     /* 캠페인 메인 네이비 */
+            --accent-blue: #1877F2;     /* 페이스북/캠페인 밝은 블루 */
+            --sky-blue: #4a9eff;
+            --ink: #1a2a4a;             /* 까만 대신 네이비 잉크 */
+            --ink-soft: #2c3e6b;
+            --text: #2d3748;
+            --text-muted: #64748b;
+            --text-faint: #94a3b8;
+            --hairline: #e2e8f0;
+            --hairline-soft: #eef2f7;
+            --bg: #ffffff;
+            --bg-soft: #f5f8fc;         /* 푸른 기운의 라이트 그레이 */
+            --bg-blue-tint: #f0f6ff;
+            --radius: 18px;
+            --radius-lg: 28px;
+            --shadow-sm: 0 1px 2px rgba(10,45,108,0.04), 0 1px 1px rgba(10,45,108,0.02);
+            --shadow-md: 0 12px 32px rgba(10,45,108,0.08), 0 4px 10px rgba(10,45,108,0.04);
+            --shadow-lg: 0 30px 60px rgba(10,45,108,0.1), 0 10px 20px rgba(10,45,108,0.05);
+            --ease: cubic-bezier(0.22, 1, 0.36, 1);
+            --transition: 0.4s var(--ease);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Inter', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            overflow-x: hidden;
+            font-feature-settings: "ss01", "cv11";
+            letter-spacing: -0.011em;
+        }
+
+        ::selection { background: var(--minjoo-blue); color: #fff; }
+
+        /* ── 상단 네비게이션 (Apple 스타일) ── */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--hairline-soft);
+        }
+        .nav-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-brand {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .nav-brand::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--minjoo-blue);
+        }
+        .nav-meta {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* ── 히어로 - 페이스북 스킨 풀블리드 ── */
+        .hero {
+            position: relative;
+            background: #0b1e44;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero-banner {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 78vh;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        /* 모바일에선 배너 한 장이 너무 와이드해서 살짝 조정 */
+        @media (max-width: 768px) {
+            .hero-banner {
+                max-height: 56vh;
+                object-position: 70% center;
+            }
+        }
+
+        /* ── D-Day 카운트다운 리본 ── */
+        .dday-ribbon {
+            background: linear-gradient(135deg, var(--minjoo-blue) 0%, #143b85 50%, var(--accent-blue) 100%);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .dday-ribbon::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .dday-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .dday-label {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        .dday-label-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+        .dday-label-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #ffdd57;
+        }
+        .dday-pulse {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ffdd57;
+            box-shadow: 0 0 0 0 rgba(255, 221, 87, 0.7);
+            animation: pulse-dot 1.6s infinite;
+        }
+        @keyframes pulse-dot {
+            0% { box-shadow: 0 0 0 0 rgba(255, 221, 87, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 221, 87, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 221, 87, 0); }
+        }
+        .dday-timer {
+            display: flex;
+            gap: 0.5rem;
+            align-items: stretch;
+        }
+        .dday-unit {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 10px;
+            padding: 0.5rem 0.85rem;
+            min-width: 60px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .dday-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            font-variant-numeric: tabular-nums;
+        }
+        .dday-suffix {
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-top: 0.25rem;
+        }
+        @media (max-width: 640px) {
+            .dday-ribbon { padding: 1.25rem 1rem; }
+            .dday-inner { gap: 1rem; flex-direction: column; }
+            .dday-label { font-size: 0.92rem; }
+            .dday-unit { min-width: 52px; padding: 0.4rem 0.6rem; }
+            .dday-num { font-size: 1.35rem; }
+            .dday-suffix { font-size: 0.6rem; }
+        }
+
+        /* ── 플로팅 공유 버튼 (확장형) ── */
+        .share-fab {
+            position: fixed;
+            bottom: 1.75rem;
+            right: 1.75rem;
+            z-index: 90;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            gap: 0.85rem;
+        }
+        .share-trigger {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            height: 58px;
+            padding: 0 1.5rem 0 1.25rem;
+            border-radius: 100px;
+            background: linear-gradient(135deg, var(--minjoo-blue) 0%, var(--accent-blue) 100%);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 14px 32px rgba(24, 119, 242, 0.45), 0 0 0 0 rgba(24, 119, 242, 0.4);
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            transition: var(--transition);
+            animation: share-breathe 2.6s ease-in-out infinite;
+        }
+        @keyframes share-breathe {
+            0%, 100% { box-shadow: 0 14px 32px rgba(24, 119, 242, 0.45), 0 0 0 0 rgba(24, 119, 242, 0.5); }
+            50%      { box-shadow: 0 14px 32px rgba(24, 119, 242, 0.45), 0 0 0 14px rgba(24, 119, 242, 0); }
+        }
+        .share-trigger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(24, 119, 242, 0.55);
+            animation-play-state: paused;
+        }
+        .share-trigger-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.18);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        .share-trigger-icon svg { width: 16px; height: 16px; }
+        .share-trigger.open {
+            background: var(--ink);
+            animation: none;
+        }
+        .share-trigger.open .share-trigger-icon {
+            transform: rotate(135deg);
+            background: rgba(255,255,255,0.2);
+        }
+        .share-trigger-text { white-space: nowrap; }
+        @media (max-width: 480px) {
+            .share-fab { bottom: 1.25rem; right: 1.25rem; }
+            .share-trigger { height: 52px; padding: 0 1.25rem 0 1rem; font-size: 0.95rem; }
+            .share-trigger-icon { width: 28px; height: 28px; }
+        }
+
+        .share-menu {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 0.6rem;
+            opacity: 0;
+            transform: translateY(10px) scale(0.95);
+            pointer-events: none;
+            transition: var(--transition);
+            transform-origin: bottom right;
+        }
+        .share-menu.open {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
+        }
+        .share-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #fff;
+            color: var(--ink);
+            border: 1px solid var(--hairline);
+            padding: 0.7rem 1.1rem;
+            border-radius: 100px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            font-family: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .share-item:hover {
+            transform: translateX(-4px);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+        .share-item-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .share-item-icon.kakao { background: #FEE500; color: #3c1e1e; }
+        .share-item-icon.facebook { background: #1877F2; }
+        .share-item-icon.link { background: var(--ink); }
+
+        /* 토스트 */
+        .toast {
+            position: fixed;
+            bottom: 6.5rem;
+            right: 1.5rem;
+            background: var(--ink);
+            color: #fff;
+            padding: 0.85rem 1.25rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transform: translateY(10px);
+            pointer-events: none;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── 스크롤 페이드인 모션 ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+            will-change: opacity, transform;
+        }
+        .reveal.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* 카드 스태거 효과 */
+        .reveal-stagger > * {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+            will-change: opacity, transform;
+        }
+        .reveal-stagger.in-view > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-stagger.in-view > *:nth-child(1)  { transition-delay: 0.02s; }
+        .reveal-stagger.in-view > *:nth-child(2)  { transition-delay: 0.06s; }
+        .reveal-stagger.in-view > *:nth-child(3)  { transition-delay: 0.10s; }
+        .reveal-stagger.in-view > *:nth-child(4)  { transition-delay: 0.14s; }
+        .reveal-stagger.in-view > *:nth-child(5)  { transition-delay: 0.18s; }
+        .reveal-stagger.in-view > *:nth-child(6)  { transition-delay: 0.22s; }
+        .reveal-stagger.in-view > *:nth-child(7)  { transition-delay: 0.26s; }
+        .reveal-stagger.in-view > *:nth-child(8)  { transition-delay: 0.30s; }
+        .reveal-stagger.in-view > *:nth-child(9)  { transition-delay: 0.34s; }
+        .reveal-stagger.in-view > *:nth-child(10) { transition-delay: 0.38s; }
+        .reveal-stagger.in-view > *:nth-child(11) { transition-delay: 0.42s; }
+        .reveal-stagger.in-view > *:nth-child(12) { transition-delay: 0.46s; }
+        .reveal-stagger.in-view > *:nth-child(n+13) { transition-delay: 0.5s; }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal, .reveal-stagger > * {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+
+        /* ── 정보 스트립 (히어로 바로 아래) ── */
+        .info-strip {
+            background: linear-gradient(135deg, var(--bg-blue-tint) 0%, #ffffff 100%);
+            border-bottom: 1px solid var(--hairline-soft);
+            padding: 2.75rem 2rem;
+        }
+        .info-strip-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+        .info-strip-cell {
+            text-align: center;
+            padding: 0.75rem 1.25rem;
+            border-right: 1px solid var(--hairline);
+        }
+        .info-strip-cell:last-child { border-right: none; }
+        .info-strip-label {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            letter-spacing: -0.005em;
+            margin-bottom: 0.85rem;
+        }
+        .info-strip-val {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--minjoo-blue);
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            .info-strip { padding: 2rem 1rem; }
+            .info-strip-inner {
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+            }
+            .info-strip-cell {
+                padding: 1.1rem 0.5rem;
+                border-right: 1px solid var(--hairline);
+                border-bottom: 1px solid var(--hairline);
+            }
+            .info-strip-cell:nth-child(2n) { border-right: none; }
+            .info-strip-cell:nth-last-child(-n+2) { border-bottom: none; }
+            .info-strip-label { font-size: 0.85rem; margin-bottom: 0.55rem; }
+            .info-strip-val { font-size: 1.2rem; }
+        }
+
+        /* ── 함께 뛰는 후보 갤러리 (포스터 그대로) ── */
+        .team-section {
+            background: linear-gradient(180deg, var(--bg-blue-tint) 0%, var(--bg) 100%);
+            padding: 6rem 2rem 5rem;
+            overflow: hidden;
+        }
+        .team-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        .team-card {
+            position: relative;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 0;
+            font-family: inherit;
+            display: block;
+            box-shadow: 0 4px 14px rgba(10,45,108,0.08);
+        }
+        .team-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(10,45,108,0.18);
+        }
+        .team-photo {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center top;
+            background: var(--bg-soft);
+            display: block;
+        }
+        .team-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 55%, rgba(10,45,108,0.92) 100%);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .team-overlay-text {
+            color: #fff;
+            font-size: 0.88rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transform: translateY(8px);
+            transition: var(--transition);
+        }
+        .team-card:hover .team-overlay {
+            opacity: 1;
+        }
+        .team-card:hover .team-overlay-text {
+            transform: translateY(0);
+        }
+        @media (max-width: 1024px) {
+            .team-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .team-section { padding: 4rem 1.25rem 3rem; }
+            .team-grid { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+            .team-card { border-radius: 12px; }
+            /* 모바일은 hover가 없으니 overlay 상시 노출 */
+            .team-overlay { opacity: 1; }
+            .team-overlay-text {
+                transform: translateY(0);
+                font-size: 0.7rem;
+            }
+        }
+
+        /* ── 시·군 그리드 (메인 선택) - 얼굴 + 정보 ── */
+        .city-grid-section {
+            background: var(--bg);
+            padding: 6rem 2rem 4rem;
+        }
+        .city-grid-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        .city-tile {
+            position: relative;
+            border: 1px solid var(--hairline);
+            background: #ffffff;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            padding: 1.1rem 1.25rem;
+            font-family: inherit;
+            text-align: left;
+            overflow: hidden;
+        }
+        .city-tile::after {
+            content: '→';
+            position: absolute;
+            right: 1.1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-faint);
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: var(--transition);
+            opacity: 0;
+        }
+        .city-tile:hover::after {
+            opacity: 1;
+            right: 0.85rem;
+            color: var(--accent-blue);
+        }
+        .city-tile.active::after,
+        .city-tile.all::after {
+            opacity: 1;
+            color: rgba(255,255,255,0.85);
+        }
+        .city-tile:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+        .city-tile.active {
+            background: linear-gradient(135deg, var(--minjoo-blue) 0%, var(--accent-blue) 100%);
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 12px 30px rgba(24, 119, 242, 0.3);
+        }
+        .tile-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            object-fit: cover;
+            object-position: center top;
+            flex-shrink: 0;
+            background: var(--bg-soft);
+            transition: var(--transition);
+        }
+        .city-tile.active .tile-avatar {
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.4);
+        }
+        .tile-avatar-empty {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--minjoo-blue) 0%, var(--accent-blue) 100%);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+        .tile-text {
+            flex: 1;
+            min-width: 0;
+        }
+        .city-tile .city-name {
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: inherit;
+            line-height: 1.15;
+        }
+        .city-tile .city-candidate {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-top: 0.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .city-tile.active .city-candidate { color: rgba(255,255,255,0.85); }
+        .city-tile .city-count {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-faint);
+            margin-top: 0.15rem;
+            letter-spacing: -0.005em;
+        }
+        .city-tile.active .city-count { color: rgba(255,255,255,0.7); }
+        .city-tile.all {
+            background: linear-gradient(135deg, var(--minjoo-blue) 0%, var(--accent-blue) 100%);
+            color: #fff;
+            border-color: transparent;
+        }
+        .city-tile.all .city-candidate { color: rgba(255,255,255,0.85); }
+        .city-tile.all .city-count { color: rgba(255,255,255,0.7); }
+
+        @media (max-width: 1024px) {
+            .city-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .city-grid-section { padding: 4rem 1.25rem 2rem; }
+            .city-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+            .city-tile { padding: 0.6rem; border-radius: 14px; gap: 0.6rem; }
+            .tile-avatar, .tile-avatar-empty { width: 44px; height: 44px; border-radius: 10px; }
+            .city-tile .city-name { font-size: 0.95rem; }
+            .city-tile .city-candidate { font-size: 0.72rem; }
+            .city-tile .city-count { font-size: 0.65rem; }
+        }
+
+        /* 사전투표 정보 바 */
+        .info-bar {
+            background: rgba(11, 34, 64, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.25rem;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+
+        /* ── 메인 컨테이너 ── */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 6rem 2rem 5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .section-eyebrow {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+        }
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            letter-spacing: -0.035em;
+            color: var(--ink);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+        .section-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            letter-spacing: -0.01em;
+        }
+
+        /* ── 검색 패널 ── */
+        .search-card {
+            background: var(--bg-soft);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            color: var(--text-faint);
+        }
+
+        .search-input-wrapper input {
+            width: 100%;
+            padding: 1.25rem 3.5rem 1.25rem 3.5rem;
+            border: 1px solid transparent;
+            border-radius: 14px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--ink);
+            background-color: #ffffff;
+            outline: none;
+            transition: var(--transition);
+            font-family: inherit;
+            letter-spacing: -0.01em;
+        }
+
+        .search-input-wrapper input::placeholder {
+            color: var(--text-faint);
+            font-weight: 400;
+        }
+
+        .search-input-wrapper input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+        }
+
+        .clear-search {
+            position: absolute;
+            right: 1.1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--hairline);
+            color: var(--text-muted);
+            border: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            font-size: 0.75rem;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .clear-search:hover { background: #c7c7cc; color: var(--ink); }
+        .clear-search.visible { display: flex; }
+
+        .chip-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            letter-spacing: -0.005em;
+        }
+
+        .city-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .chip {
+            padding: 0.6rem 1.15rem;
+            border: 1px solid var(--hairline);
+            background: #ffffff;
+            color: var(--ink-soft);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            font-family: inherit;
+            letter-spacing: -0.005em;
+        }
+
+        .chip:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .chip.active {
+            background: var(--accent-blue);
+            color: #ffffff;
+            border-color: var(--accent-blue);
+        }
+
+        /* ── 결과 영역 ── */
+        .stations-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid var(--hairline-soft);
+        }
+        .stations-count {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+        .stations-count span {
+            color: var(--ink);
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        .stations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.25rem;
+        }
+
+        /* ── 투표소 카드 - 미니멀 럭셔리 ── */
+        .station-card {
+            background: #ffffff;
+            border: 1px solid var(--hairline-soft);
+            border-radius: var(--radius);
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .station-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-region {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+            line-height: 1.25;
+        }
+
+        .card-building {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--ink-soft);
+            padding: 0.85rem 1rem;
+            background: var(--bg-soft);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .card-info {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            line-height: 1.5;
+        }
+        .card-info-icon { color: var(--text-faint); flex-shrink: 0; }
+
+        .facility-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .facility-badge {
+            font-size: 0.72rem;
+            background: var(--bg-soft);
+            color: var(--text-muted);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-weight: 500;
+            letter-spacing: -0.005em;
+        }
+        .facility-badge.elevator {
+            background: #e8f5ed;
+            color: #186a3b;
+        }
+
+        .card-actions { margin-top: auto; }
+
+        .btn-map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--minjoo-blue) 0%, var(--accent-blue) 100%);
+            color: #ffffff;
+            border: none;
+            padding: 0.95rem 1rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: inherit;
+            letter-spacing: -0.01em;
+            box-shadow: 0 6px 16px rgba(24, 119, 242, 0.25);
+        }
+
+        .btn-map:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(24, 119, 242, 0.35);
+        }
+
+        .btn-map svg { width: 16px; height: 16px; }
+
+        .no-results {
+            background: var(--bg-soft);
+            border-radius: var(--radius-lg);
+            padding: 5rem 2rem;
+            text-align: center;
+            grid-column: 1 / -1;
+            display: none;
+        }
+        .no-results h3 {
+            font-size: 1.3rem;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .no-results p { color: var(--text-muted); }
+
+        /* ── 푸터 (캠페인 네이비) ── */
+        footer {
+            background: linear-gradient(180deg, var(--minjoo-blue) 0%, #061d4a 100%);
+            color: #f5f8fc;
+            padding: 5rem 2rem 3rem;
+            position: relative;
+        }
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue) 0%, var(--sky-blue) 100%);
+        }
+        .footer-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .footer-brand {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+        .footer-slogan {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 3rem;
+            letter-spacing: -0.01em;
+        }
+        .footer-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.12);
+            margin-bottom: 2rem;
+        }
+        .footer-details {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.8;
+            max-width: 900px;
+            letter-spacing: -0.005em;
+        }
+        .footer-copyright {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: 1.5rem;
+        }
+
+        /* ── 반응형 ── */
+        @media (max-width: 768px) {
+            .nav-inner { padding: 0 1.25rem; height: 52px; }
+            .nav-meta { display: none; }
+
+            .hero {
+                padding: 4rem 1.25rem 3rem;
+            }
+            .info-panel {
+                grid-template-columns: 1fr 1fr;
+                padding: 1.5rem;
+                gap: 0;
+            }
+            .info-cell {
+                padding: 1rem;
+                border-right: 1px solid var(--hairline);
+                border-bottom: 1px solid var(--hairline);
+            }
+            .info-cell:nth-child(2n) { border-right: none; }
+            .info-cell:nth-last-child(-n+2) { border-bottom: none; }
+
+            .container { padding: 4rem 1.25rem 4rem; }
+            .search-card { padding: 1.5rem; border-radius: 20px; }
+            .stations-grid { grid-template-columns: 1fr; }
+            .station-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 네비 -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-brand">우상호 · 강원특별자치도지사 후보</div>
+            <div class="nav-meta">기호 1번 · 더불어민주당</div>
+        </div>
+    </nav>
+
+    <!-- 히어로 - 페이스북 스킨 풀블리드 -->
+    <section class="hero">
+        <img class="hero-banner" src="20260304_페이스북_스킨_최종.png" alt="강원도가 특별해지는 순간 — 대통령이 보낸 사람, 기호 1번 우상호 더불어민주당 강원특별자치도지사 후보">
+    </section>
+
+    <!-- D-Day 카운트다운 리본 -->
+    <section class="dday-ribbon">
+        <div class="dday-inner">
+            <div class="dday-label">
+                <span class="dday-label-icon">🗳️</span>
+                <span id="ddayText">사전투표 시작까지</span>
+                <span class="dday-label-status" id="ddayStatus" style="display:none;">
+                    <span class="dday-pulse"></span>
+                    <span id="ddayStatusText">LIVE</span>
+                </span>
+            </div>
+            <div class="dday-timer" id="ddayTimer">
+                <div class="dday-unit"><div class="dday-num" id="ddayDays">00</div><div class="dday-suffix">DAYS</div></div>
+                <div class="dday-unit"><div class="dday-num" id="ddayHours">00</div><div class="dday-suffix">HOURS</div></div>
+                <div class="dday-unit"><div class="dday-num" id="ddayMins">00</div><div class="dday-suffix">MINS</div></div>
+                <div class="dday-unit"><div class="dday-num" id="ddaySecs">00</div><div class="dday-suffix">SECS</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 핵심 정보 스트립 -->
+    <section class="info-strip">
+        <div class="info-strip-inner">
+            <div class="info-strip-cell">
+                <div class="info-strip-label">투표 대상</div>
+                <div class="info-strip-val">강원도민</div>
+            </div>
+            <div class="info-strip-cell">
+                <div class="info-strip-label">사전 투표일</div>
+                <div class="info-strip-val">5.29(금) ~ 5.30(토)</div>
+            </div>
+            <div class="info-strip-cell">
+                <div class="info-strip-label">투표 시간</div>
+                <div class="info-strip-val">06:00 — 18:00</div>
+            </div>
+            <div class="info-strip-cell">
+                <div class="info-strip-label">지참물</div>
+                <div class="info-strip-val">신분증 필수</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 함께 뛰는 후보 갤러리 -->
+    <section class="team-section">
+        <div class="team-inner">
+            <div class="section-header reveal" style="margin-bottom: 0;">
+                <h2 class="section-title">강원 전역, 함께 뛰는 우리 후보</h2>
+            </div>
+            <div class="team-grid reveal-stagger" id="teamGrid"></div>
+        </div>
+    </section>
+
+    <!-- 결과 + 텍스트 검색 -->
+    <main class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title" id="resultTitle">전체 사전투표소</h2>
+            <p class="section-sub">위에서 후보를 누르거나, 아래에서 읍·면·동·투표소명으로 검색하실 수 있습니다.</p>
+        </div>
+
+        <div class="search-card reveal">
+            <div class="search-input-wrapper" style="margin-bottom: 0;">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+                </svg>
+                <input type="text" id="searchInput" oninput="filterStations()" placeholder="읍·면·동, 투표소, 건물명 검색 (예: 신북읍, 가산초등학교)">
+                <button class="clear-search" id="clearSearch" onclick="clearSearch()" aria-label="검색어 지우기">✕</button>
+            </div>
+        </div>
+
+        <div class="stations-header">
+            <div class="stations-count">총 <span id="countSpan">0</span>개의 투표소</div>
+        </div>
+
+        <div class="stations-grid reveal-stagger" id="stationsGrid">
+            <div class="no-results" id="noResults">
+                <h3>조회 조건에 맞는 사전투표소가 없습니다.</h3>
+                <p>검색어나 시·군 선택을 다시 확인해 주시기 바랍니다.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 플로팅 공유 버튼 -->
+    <div class="share-fab">
+        <div class="share-menu" id="shareMenu">
+            <button class="share-item" data-share="kakao">
+                <span class="share-item-icon kakao">K</span>
+                <span>카카오톡 공유</span>
+            </button>
+            <button class="share-item" data-share="facebook">
+                <span class="share-item-icon facebook">f</span>
+                <span>페이스북 공유</span>
+            </button>
+            <button class="share-item" data-share="link">
+                <span class="share-item-icon link">⟗</span>
+                <span>링크 복사</span>
+            </button>
+        </div>
+        <button class="share-trigger" id="shareTrigger" aria-label="공유하기">
+            <span class="share-trigger-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+            </span>
+            <span class="share-trigger-text">친구에게 공유하기</span>
+        </button>
+    </div>
+    <div class="toast" id="toast">링크가 복사되었습니다</div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">우상호 선거대책위원회</div>
+            <div class="footer-slogan">강원도가 특별해지는 순간 — 대통령이 보낸 사람, 기호 1번 우상호</div>
+            <div class="footer-divider"></div>
+            <div class="footer-details">
+                본 페이지는 중앙선거관리위원회 선거통계시스템 오픈 데이터를 기반으로 도민 여러분의 투표 편의를 위해 제작되었습니다.<br>
+                사전투표는 별도의 신고 없이 신분증만 지참하시면 전국 모든 사전투표소에서 투표하실 수 있습니다.<br>
+                대표전화 02-503-1114 (중앙선관위) · 선거범죄신고 국번없이 1390
+            </div>
+            <div class="footer-copyright">© 2026 Woo Sang Ho Camp. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- JSON 데이터 주입 및 검색 스크립트 -->
+    <script>
+        // Node.js에 의해 빌드 시 내장된 사전투표소 데이터
+        const prevoteStations = [
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "신북읍",
+        "stationName": "신북읍사전투표소",
+        "buildingName": "신북읍주민자치센터(1층)",
+        "address": "강원특별자치도 춘천시 신북읍 신샘밭로 319",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520101&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "동면",
+        "stationName": "동면사전투표소",
+        "buildingName": "가산초등학교(1층, 체육관)",
+        "address": "강원특별자치도 춘천시 동면 가산로 52",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520102&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "동산면",
+        "stationName": "동산면사전투표소",
+        "buildingName": "동산면행정복지센터(1층, 로비)",
+        "address": "강원특별자치도 춘천시 동산면 조양길 270",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520103&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "신동면",
+        "stationName": "신동면사전투표소",
+        "buildingName": "신동면행정복지센터(3층, 대회의실)",
+        "address": "강원특별자치도 춘천시 신동면 김유정로 1418",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520104&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "동내면",
+        "stationName": "동내면사전투표소",
+        "buildingName": "춘천동남새마을금고 본점(4층, 대회의실)",
+        "address": "강원특별자치도 춘천시 동내면 영서로 1832",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520105&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "남면",
+        "stationName": "남면사전투표소",
+        "buildingName": "남면행정복지센터 의용소방대사무실(1층)",
+        "address": "강원특별자치도 춘천시 남면 충효로 1130-12",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520106&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "남산면",
+        "stationName": "남산면사전투표소",
+        "buildingName": "남산초등학교(1층, 바일관)",
+        "address": "강원특별자치도 춘천시 남산면 한치로 59",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520107&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "서면",
+        "stationName": "서면사전투표소",
+        "buildingName": "서면주민자치센터[(구)서면복지회관] (1층, 탁구장)",
+        "address": "강원특별자치도 춘천시 서면 금산길 27",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520108&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "사북면",
+        "stationName": "사북면사전투표소",
+        "buildingName": "사북면행정복지센터(1층, 주민대피시설)",
+        "address": "강원특별자치도 춘천시 사북면 영서로 4721",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520109&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "북산면",
+        "stationName": "북산면사전투표소",
+        "buildingName": "북산면행정복지센터 의용소방대사무실(1층)",
+        "address": "강원특별자치도 춘천시 북산면 북산로 493",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520110&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "소양동",
+        "stationName": "소양동사전투표소",
+        "buildingName": "소양동행정복지센터(2층, 문화교실)",
+        "address": "강원특별자치도 춘천시 금강로 17 (소양로3가)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520111&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "교동",
+        "stationName": "교동사전투표소",
+        "buildingName": "교동초등학교(1층, 늘품관)",
+        "address": "강원특별자치도 춘천시 교동길 29 (교동)",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520112&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "조운동",
+        "stationName": "조운동사전투표소",
+        "buildingName": "(구)조운동행정복지센터(1층)",
+        "address": "강원특별자치도 춘천시 아침길 11 (조양동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520113&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "약사명동",
+        "stationName": "약사명동사전투표소",
+        "buildingName": "약사명동행정복지센터(2층, 다목적실)",
+        "address": "강원특별자치도 춘천시 망대길 9 (죽림동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520114&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "근화동",
+        "stationName": "근화동사전투표소",
+        "buildingName": "근화동행정복지센터(4층, 대회의실)",
+        "address": "강원특별자치도 춘천시 영서로 2487 (근화동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520115&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "후평1동",
+        "stationName": "후평1동사전투표소",
+        "buildingName": "후평1동행정복지센터(2층, 문화교실)",
+        "address": "강원특별자치도 춘천시 후석로 403 (후평동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520116&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "후평2동",
+        "stationName": "후평2동사전투표소",
+        "buildingName": "부안초등학교(1층, 해솔관)",
+        "address": "강원특별자치도 춘천시 서부대성로239번길 70 (후평동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520117&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "후평3동",
+        "stationName": "후평3동사전투표소",
+        "buildingName": "후평3동행정복지센터(3층, 대회의실)",
+        "address": "강원특별자치도 춘천시 후만로 83 (후평동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520118&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "효자1동",
+        "stationName": "효자1동사전투표소",
+        "buildingName": "효자1동행정복지센터(지하1층, 주차장)",
+        "address": "강원특별자치도 춘천시 효자상길 9 (효자동)",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "설치대상",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520119&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "효자2동",
+        "stationName": "효자2동사전투표소",
+        "buildingName": "효자2동행정복지센터(2층, 다목적실)",
+        "address": "강원특별자치도 춘천시 돌담길10번길 8 (효자동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520120&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "효자3동",
+        "stationName": "효자3동사전투표소",
+        "buildingName": "효자3동행정복지센터(1층, 문화사랑방)",
+        "address": "강원특별자치도 춘천시 두하길 21 (효자동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520121&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "석사동",
+        "stationName": "석사동사전투표소",
+        "buildingName": "석사동행정복지센터(3층, 회의실)",
+        "address": "강원특별자치도 춘천시 후석로 48 (석사동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520122&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "퇴계동",
+        "stationName": "퇴계동사전투표소",
+        "buildingName": "퇴계동행정복지센터(3층, 대회의실)",
+        "address": "강원특별자치도 춘천시 남춘로 7 (퇴계동)",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520123&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "강남동",
+        "stationName": "강남동사전투표소",
+        "buildingName": "춘천남부노인복지관(1층, 대강당)",
+        "address": "강원특별자치도 춘천시 방송길 86 (온의동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520124&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "춘천시",
+        "sggName": "춘천시",
+        "emdName": "신사우동",
+        "stationName": "신사우동사전투표소",
+        "buildingName": "춘천북부노인복지관(1층, 미소랑게이트볼장)",
+        "address": "강원특별자치도 춘천시 충열로 124 (우두동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520125&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "문막읍",
+        "stationName": "문막읍사전투표소",
+        "buildingName": "문막복지회관(1층, 은행나무실)",
+        "address": "강원특별자치도 원주시 문막읍 문막시장1길 26",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520201&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "소초면",
+        "stationName": "소초면사전투표소",
+        "buildingName": "소초면주민자치센터(1층, 세미나실)",
+        "address": "강원특별자치도 원주시 소초면 평장동길 86-16",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520202&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "호저면",
+        "stationName": "호저면사전투표소",
+        "buildingName": "호저초등학교(2층, 한빛관)",
+        "address": "강원특별자치도 원주시 호저면 호저로 428",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520203&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "지정면",
+        "stationName": "지정면사전투표소",
+        "buildingName": "서부권생활문화센터(3층, 다목적실)",
+        "address": "강원특별자치도 원주시 지정면 가곡로 75-1",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520204&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "부론면",
+        "stationName": "부론면사전투표소",
+        "buildingName": "부론초등학교(1층, 보람관)",
+        "address": "강원특별자치도 원주시 부론면 법천시장길 58",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520205&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "귀래면",
+        "stationName": "귀래면사전투표소",
+        "buildingName": "귀래면복지센터(1층, 대강당)",
+        "address": "강원특별자치도 원주시 귀래면 부귀로 1967",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520206&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "흥업면",
+        "stationName": "흥업면사전투표소",
+        "buildingName": "흥업면다목적복지센터(1층, 다목적실)",
+        "address": "강원특별자치도 원주시 흥업면 울업1길 3",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520207&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "판부면",
+        "stationName": "판부면사전투표소",
+        "buildingName": "원주시 가족센터(2층, 203호)",
+        "address": "강원특별자치도 원주시 판부면 매봉길 16-18",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520208&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "신림면",
+        "stationName": "신림면사전투표소",
+        "buildingName": "신림힐링센터(1층, 식당)",
+        "address": "강원특별자치도 원주시 신림면 제원로 1415",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520209&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "중앙동",
+        "stationName": "중앙동사전투표소",
+        "buildingName": "중앙청소년문화의집(1층, 휴게공간)",
+        "address": "강원특별자치도 원주시 중앙로 89 (중앙동)",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520210&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "원인동",
+        "stationName": "원인동사전투표소",
+        "buildingName": "밥상공동체종합사회복지관(2층, 로비)",
+        "address": "강원특별자치도 원주시 일산로 81-2 (원동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520211&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "개운동",
+        "stationName": "개운동사전투표소",
+        "buildingName": "개운동행정복지센터(3층, 대회의실)",
+        "address": "강원특별자치도 원주시 행구로 40 (개운동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520212&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "명륜1동",
+        "stationName": "명륜1동사전투표소",
+        "buildingName": "댄싱공연장(1층, 제1연습실)",
+        "address": "강원특별자치도 원주시 단구로 170 (명륜동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520213&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "명륜2동",
+        "stationName": "명륜2동사전투표소",
+        "buildingName": "명륜2동행정복지센터 별관(1층, 회의실)",
+        "address": "강원특별자치도 원주시 황소마을길 30 (명륜동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520214&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "단구동",
+        "stationName": "단구동사전투표소",
+        "buildingName": "단구동행정복지센터(3층, 대회의실)",
+        "address": "강원특별자치도 원주시 늘품로 83 (단구동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520215&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "일산동",
+        "stationName": "일산동사전투표소",
+        "buildingName": "일산초등학교(1층,새싹꿈마당(체육관))",
+        "address": "강원특별자치도 원주시 일산초교길 1 (일산동)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520216&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "학성동",
+        "stationName": "학성동사전투표소",
+        "buildingName": "원주축협 본점(2층, 문화센터)",
+        "address": "강원특별자치도 원주시 원일로 233 (학성동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520217&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "단계동",
+        "stationName": "단계동사전투표소",
+        "buildingName": "단계동행정복지센터(2층, 대회의실)",
+        "address": "강원특별자치도 원주시 북원로 2321 (단계동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520218&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "우산동",
+        "stationName": "우산동사전투표소",
+        "buildingName": "원주시근로자종합복지관(2층, 다목적실)",
+        "address": "강원특별자치도 원주시 우산공단길 24 (우산동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520219&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "태장1동",
+        "stationName": "태장1동사전투표소",
+        "buildingName": "원주드림체육관(2층, 보치아교실)",
+        "address": "강원특별자치도 원주시 현충로 53-1 (태장동)",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520220&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "태장2동",
+        "stationName": "태장2동사전투표소",
+        "buildingName": "태장2동행정복지센터(3층, 다목적실)",
+        "address": "강원특별자치도 원주시 흥양로50번길 1 (태장동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520221&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "봉산동",
+        "stationName": "봉산동사전투표소",
+        "buildingName": "봉산동행정복지센터(3층, 다목적실)",
+        "address": "강원특별자치도 원주시 치악로 1868 (봉산동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520222&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "행구동",
+        "stationName": "행구동사전투표소",
+        "buildingName": "행구동행정복지센터(2층, 대회의실)",
+        "address": "강원특별자치도 원주시 행구로 250 (행구동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520223&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "무실동",
+        "stationName": "무실동사전투표소",
+        "buildingName": "원주문화원(1층, 전시실)",
+        "address": "강원특별자치도 원주시 무실로 235 (무실동)",
+        "facilities": [
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520224&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "원주시",
+        "sggName": "원주시",
+        "emdName": "반곡관설동",
+        "stationName": "반곡관설동사전투표소",
+        "buildingName": "반곡관설동행정복지센터(2층, 대회의실)",
+        "address": "강원특별자치도 원주시 입춘로 5 (반곡동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520225&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "주문진읍",
+        "stationName": "주문진읍사전투표소",
+        "buildingName": "주문진읍사무소(3층, 로비)",
+        "address": "강원특별자치도 강릉시 주문진읍 항구로 19",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520301&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "성산면",
+        "stationName": "성산면사전투표소",
+        "buildingName": "성산초등학교(1층, 체육관)",
+        "address": "강원특별자치도 강릉시 성산면 구산길 15",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520302&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "왕산면",
+        "stationName": "왕산면사전투표소",
+        "buildingName": "왕산면보건지소(1층, 보건교육장)",
+        "address": "강원특별자치도 강릉시 왕산면 백두대간로 1991",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520303&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "구정면",
+        "stationName": "구정면사전투표소",
+        "buildingName": "여찬1리마을회관(1층)",
+        "address": "강원특별자치도 강릉시 구정면 구정중앙로 238",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520304&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "강동면",
+        "stationName": "강동면사전투표소",
+        "buildingName": "강동면복지회관(1층, 식당)",
+        "address": "강원특별자치도 강릉시 강동면 시동서당길 140",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520305&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "옥계면",
+        "stationName": "옥계면사전투표소",
+        "buildingName": "크리스탈밸리센터(1층, 대회의실)",
+        "address": "강원특별자치도 강릉시 옥계면 현내중길 32",
+        "facilities": [
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520306&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "사천면",
+        "stationName": "사천면사전투표소",
+        "buildingName": "사천초등학교(1층, 체육관)",
+        "address": "강원특별자치도 강릉시 사천면 미노길 46",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520307&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "연곡면",
+        "stationName": "연곡면사전투표소",
+        "buildingName": "연곡면복지회관(1층, 식당)",
+        "address": "강원특별자치도 강릉시 연곡면 연주로 43",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520308&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "홍제동",
+        "stationName": "홍제동사전투표소",
+        "buildingName": "강릉초등학교 백년관(1층)",
+        "address": "강원특별자치도 강릉시 토성로 103 (홍제동)",
+        "facilities": [
+            "도움벨",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520309&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "중앙동",
+        "stationName": "중앙동사전투표소",
+        "buildingName": "중앙동주민센터(2층, 회의실)",
+        "address": "강원특별자치도 강릉시 토성로 163 (임당동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520310&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "옥천동",
+        "stationName": "옥천동사전투표소",
+        "buildingName": "옥천초등학교(1층, 체육관)",
+        "address": "강원특별자치도 강릉시 수문길 25 (옥천동)",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520311&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "교1동",
+        "stationName": "교1동사전투표소",
+        "buildingName": "교1동주민센터(2층, 대회의실)",
+        "address": "강원특별자치도 강릉시 하슬라로 173 (교동)",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520312&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "교2동",
+        "stationName": "교2동사전투표소",
+        "buildingName": "교2동주민센터(2층, 회의실)",
+        "address": "강원특별자치도 강릉시 율곡로 2974 (교동)",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520313&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "포남1동",
+        "stationName": "포남1동사전투표소",
+        "buildingName": "포남1동주민센터(1층, 회의실)",
+        "address": "강원특별자치도 강릉시 남구길10번길 25 (포남동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520314&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "포남2동",
+        "stationName": "포남2동사전투표소",
+        "buildingName": "한솔초등학교(1층, 체육관)",
+        "address": "강원특별자치도 강릉시 하평2길 45 (포남동)",
+        "facilities": [
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520315&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "초당동",
+        "stationName": "초당동사전투표소",
+        "buildingName": "강릉고등학교(2층, 체육관)",
+        "address": "강원특별자치도 강릉시 강릉대로587번길 68 (초당동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520316&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "송정동",
+        "stationName": "송정동사전투표소",
+        "buildingName": "동명초등학교(1층, 체육관)",
+        "address": "강원특별자치도 강릉시 경강로 2473 (송정동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520317&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "내곡동",
+        "stationName": "내곡동사전투표소",
+        "buildingName": "강릉시보훈회관(1층, 대강당)",
+        "address": "강원특별자치도 강릉시 범일로 611-7 (내곡동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520318&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "강남동",
+        "stationName": "강남동사전투표소",
+        "buildingName": "강릉단오제전수교육관(2층, 본관교육실)",
+        "address": "강원특별자치도 강릉시 단오장길 1 (노암동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520319&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "성덕동",
+        "stationName": "성덕동사전투표소",
+        "buildingName": "강릉중앙고등학교(1층, 체육관)",
+        "address": "강원특별자치도 강릉시 강변로 422 (입암동)",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520320&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "강릉시",
+        "sggName": "강릉시",
+        "emdName": "경포동",
+        "stationName": "경포동사전투표소",
+        "buildingName": "강릉복합복지체육센터(1층, 반다비체육센터(다목적체육관))",
+        "address": "강원특별자치도 강릉시 선수촌로 139 (유천동)",
+        "facilities": [
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520321&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "천곡동",
+        "stationName": "천곡동사전투표소",
+        "buildingName": "동해시청소년센터(2층, 체육관)",
+        "address": "강원특별자치도 동해시 덕골길 25 (천곡동)",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520401&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "송정동",
+        "stationName": "송정동사전투표소",
+        "buildingName": "동해초등학교(1층, 체육관)",
+        "address": "강원특별자치도 동해시 봉오주택길 22 (용정동)",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520402&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "북삼동",
+        "stationName": "북삼동사전투표소",
+        "buildingName": "북삼동행정복지센터(2층, 대회의실)",
+        "address": "강원특별자치도 동해시 효자남길 33-4 (동회동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520403&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "부곡동",
+        "stationName": "부곡동사전투표소",
+        "buildingName": "부곡동행정복지센터(지하1층, 다목적실)",
+        "address": "강원특별자치도 동해시 부곡로 21 (부곡동)",
+        "facilities": [
+            "승강기 등",
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520404&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "동호동",
+        "stationName": "동호동사전투표소",
+        "buildingName": "동호동행정복지센터 별관(1층, 동호동주민자치센터)",
+        "address": "강원특별자치도 동해시 동호3길 35 (발한동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520405&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "발한동",
+        "stationName": "발한동사전투표소",
+        "buildingName": "발한동행정복지센터(1층, 민원실)",
+        "address": "강원특별자치도 동해시 발한로 211 (발한동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520406&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "묵호동",
+        "stationName": "묵호동사전투표소",
+        "buildingName": "묵호동행정복지센터(1층, 민원실)",
+        "address": "강원특별자치도 동해시 논골길 78 (묵호진동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520407&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "북평동",
+        "stationName": "북평동사전투표소",
+        "buildingName": "북평동행정복지센터(1층, 민원실)",
+        "address": "강원특별자치도 동해시 대동로 137 (북평동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520408&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "망상동",
+        "stationName": "망상동사전투표소",
+        "buildingName": "묵호초등학교(1층, 체육관)",
+        "address": "강원특별자치도 동해시 발한천길 30 (발한동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520409&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "동해시",
+        "sggName": "동해시",
+        "emdName": "삼화동",
+        "stationName": "삼화동사전투표소",
+        "buildingName": "삼화동 다목적회관(1층)",
+        "address": "강원특별자치도 동해시 무릉1길 10 (이로동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520410&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "도계읍",
+        "stationName": "도계읍사전투표소",
+        "buildingName": "도계읍복지회관(1층)",
+        "address": "강원특별자치도 삼척시 도계읍 도계로 308",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520501&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "원덕읍",
+        "stationName": "원덕읍사전투표소",
+        "buildingName": "원덕읍복지회관(1층, 연회장)",
+        "address": "강원특별자치도 삼척시 원덕읍 삼척로 446-14",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520502&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "근덕면",
+        "stationName": "근덕면사전투표소",
+        "buildingName": "근덕면복지회관(1층, 식당)",
+        "address": "강원특별자치도 삼척시 근덕면 교가2길 7",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520503&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "하장면",
+        "stationName": "하장면사전투표소",
+        "buildingName": "하장면복지회관(1층, 식당)",
+        "address": "강원특별자치도 삼척시 하장면 하장길 114",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520504&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "노곡면",
+        "stationName": "노곡면사전투표소",
+        "buildingName": "노곡면복지회관(1층, 연회장)",
+        "address": "강원특별자치도 삼척시 노곡면 미근로 866",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520505&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "미로면",
+        "stationName": "미로면사전투표소",
+        "buildingName": "미로면복지회관(1층, 연회장)",
+        "address": "강원특별자치도 삼척시 미로면 적병길 6",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520506&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "가곡면",
+        "stationName": "가곡면사전투표소",
+        "buildingName": "가곡면복지회관(1층, 연회장)",
+        "address": "강원특별자치도 삼척시 가곡면 가곡천로 1455-1",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520507&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "신기면",
+        "stationName": "신기면사전투표소",
+        "buildingName": "신기생활문화관(1층, 회의실)",
+        "address": "강원특별자치도 삼척시 신기면 신기길 93",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520508&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "남양동",
+        "stationName": "남양동사전투표소",
+        "buildingName": "삼척어울림플라자(1층, 다목적홀)",
+        "address": "강원특별자치도 삼척시 중앙시장길 53-6 (남양동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520509&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "성내동",
+        "stationName": "성내동사전투표소",
+        "buildingName": "삼척문화예술회관(1층, 제1전시실)",
+        "address": "강원특별자치도 삼척시 엑스포로 45 (성남동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520510&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "교동",
+        "stationName": "교동사전투표소",
+        "buildingName": "삼척시평생학습관(1층, 대강당)",
+        "address": "강원특별자치도 삼척시 청석로3길 16-41 (교동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520511&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "삼척시",
+        "sggName": "삼척시",
+        "emdName": "정라동",
+        "stationName": "정라동사전투표소",
+        "buildingName": "정라동행정복지센터(2층, 회의실)",
+        "address": "강원특별자치도 삼척시 새천년도로 13 (정상동)",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520512&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "황지동",
+        "stationName": "황지동사전투표소",
+        "buildingName": "태백문화예술회관 전시컨벤션홀(1층, 소전시실)",
+        "address": "강원특별자치도 태백시 고원로 203 (황지동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520601&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "황연동",
+        "stationName": "황연동사전투표소",
+        "buildingName": "태백시노인회관(1층, 소회의실)",
+        "address": "강원특별자치도 태백시 광장로 45 (황지동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520602&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "삼수동",
+        "stationName": "삼수동사전투표소",
+        "buildingName": "태서초등학교(1층, 체육관[도담관] 내 방과후교실2)",
+        "address": "강원특별자치도 태백시 태백로 802 (황지동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520603&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "상장동",
+        "stationName": "상장동사전투표소",
+        "buildingName": "황지고등학교 도서관(1층, 세종실)",
+        "address": "강원특별자치도 태백시 번영로 179 (황지동)",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520604&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "문곡소도동",
+        "stationName": "문곡소도동사전투표소",
+        "buildingName": "문곡소도동주민자치센터(1층, 정보검색실)",
+        "address": "강원특별자치도 태백시 천제단길 4 (소도동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520605&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "장성동",
+        "stationName": "장성동사전투표소",
+        "buildingName": "장성동행정복지센터(1층, 회의실)",
+        "address": "강원특별자치도 태백시 장성1길 171 (장성동)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520606&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "구문소동",
+        "stationName": "구문소동사전투표소",
+        "buildingName": "구문소동주민봉사작업장(1층)",
+        "address": "강원특별자치도 태백시 평화길 13 (장성동)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520607&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "태백시",
+        "sggName": "태백시",
+        "emdName": "철암동",
+        "stationName": "철암동사전투표소",
+        "buildingName": "철암청소년문화의집(1층, 모둠터)",
+        "address": "강원특별자치도 태백시 동태백로 558 (철암동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520608&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "정선읍",
+        "stationName": "정선읍사전투표소",
+        "buildingName": "정선군종합사회복지관(3층, 대강당)",
+        "address": "강원특별자치도 정선군 정선읍 봉양7길 16",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520701&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "고한읍",
+        "stationName": "고한읍사전투표소",
+        "buildingName": "고한읍종합복지회관(1층, 문화교양강좌실)",
+        "address": "강원특별자치도 정선군 고한읍 고한2길 1",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520702&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "사북읍",
+        "stationName": "사북읍사전투표소",
+        "buildingName": "사북청소년장학센터(2층, 세미나실)",
+        "address": "강원특별자치도 정선군 사북읍 사북6길 12-6",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520703&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "신동읍",
+        "stationName": "신동읍사전투표소",
+        "buildingName": "신동읍함백출장소 복지회관(1층, 회의실)",
+        "address": "강원특별자치도 정선군 신동읍 새골길 30",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520704&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "화암면",
+        "stationName": "화암면사전투표소",
+        "buildingName": "화암면종합복지회관(1층, 연회장)",
+        "address": "강원특별자치도 정선군 화암면 그림바위길 40",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520705&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "남면",
+        "stationName": "남면사전투표소",
+        "buildingName": "남면종합복지회관(1층, 연회장)",
+        "address": "강원특별자치도 정선군 남면 칠현로 80",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520706&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "여량면",
+        "stationName": "여량면사전투표소",
+        "buildingName": "여량면종합복지회관(1층, 연회장)",
+        "address": "강원특별자치도 정선군 여량면 서동로 2885",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520707&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "북평면",
+        "stationName": "북평면사전투표소",
+        "buildingName": "북평면종합복지회관(1층, 연회장)",
+        "address": "강원특별자치도 정선군 북평면 북평6길 35",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520708&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "정선군",
+        "sggName": "정선군",
+        "emdName": "임계면",
+        "stationName": "임계면사전투표소",
+        "buildingName": "임계면종합복지회관(1층, 피로연장)",
+        "address": "강원특별자치도 정선군 임계면 서동로 4584",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520709&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "영랑동",
+        "stationName": "영랑동사전투표소",
+        "buildingName": "속초문화예술회관 부속동(1층, 전시실)",
+        "address": "강원특별자치도 속초시 번영로 155 (영랑동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520801&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "동명동",
+        "stationName": "동명동사전투표소",
+        "buildingName": "동해지방해양수산청 속초해양수산사무소 (1층, 로비)",
+        "address": "강원특별자치도 속초시 동명항길 27 (동명동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520802&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "금호동",
+        "stationName": "금호동사전투표소",
+        "buildingName": "금호동주민센터(1층, 민방위대피소)",
+        "address": "강원특별자치도 속초시 중앙시장로 43 (중앙동)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520803&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "교동",
+        "stationName": "교동사전투표소",
+        "buildingName": "속초초등학교(1층, 체육관)",
+        "address": "강원특별자치도 속초시 수복로 117 (청학동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520804&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "노학동",
+        "stationName": "노학동사전투표소",
+        "buildingName": "청초생활체육관(1층)",
+        "address": "강원특별자치도 속초시 동해대로 4229 (교동)",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520805&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "조양동",
+        "stationName": "조양동사전투표소",
+        "buildingName": "속초시도서체육센터 내 속초시립도서관(1층, 로비)",
+        "address": "강원특별자치도 속초시 조양로 89 (조양동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520806&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "청호동",
+        "stationName": "청호동사전투표소",
+        "buildingName": "청호초등학교(1층, 체육관)",
+        "address": "강원특별자치도 속초시 청호로 60 (청호동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520807&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "속초시",
+        "sggName": "속초시",
+        "emdName": "대포동",
+        "stationName": "대포동사전투표소",
+        "buildingName": "설악초등학교(1층, 체육관)",
+        "address": "강원특별자치도 속초시 청봉로 51 (설악동)",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520808&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "고성군",
+        "sggName": "고성군",
+        "emdName": "간성읍",
+        "stationName": "간성읍사전투표소",
+        "buildingName": "고성종합체육관(1층, 체육관)",
+        "address": "강원특별자치도 고성군 간성읍 수성로 111",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520901&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "고성군",
+        "sggName": "고성군",
+        "emdName": "거진읍",
+        "stationName": "거진읍사전투표소",
+        "buildingName": "거진읍행정복지센터(지하1층, 식당)",
+        "address": "강원특별자치도 고성군 거진읍 자산천로 240",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520902&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "고성군",
+        "sggName": "고성군",
+        "emdName": "현내면",
+        "stationName": "현내면사전투표소",
+        "buildingName": "현내면행정복지센터(2층, 회의실)",
+        "address": "강원특별자치도 고성군 현내면 한나루로 67",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520903&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "고성군",
+        "sggName": "고성군",
+        "emdName": "죽왕면",
+        "stationName": "죽왕면사전투표소",
+        "buildingName": "죽왕면복지회관(1층, 식당)",
+        "address": "강원특별자치도 고성군 죽왕면 심층수길 36",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520904&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "고성군",
+        "sggName": "고성군",
+        "emdName": "토성면",
+        "stationName": "토성면사전투표소",
+        "buildingName": "토성면다목적복지센터(1층, 식당동)",
+        "address": "강원특별자치도 고성군 토성면 천진해변길 88-1",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=520905&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양양군",
+        "sggName": "양양군",
+        "emdName": "양양읍",
+        "stationName": "양양읍사전투표소",
+        "buildingName": "일출웨딩홀(1층, 제1연회장)",
+        "address": "강원특별자치도 양양군 양양읍 양양로 114-5",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521001&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양양군",
+        "sggName": "양양군",
+        "emdName": "서면",
+        "stationName": "서면사전투표소",
+        "buildingName": "서면복지회관(1층)",
+        "address": "강원특별자치도 양양군 서면 들돌길 6",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521002&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양양군",
+        "sggName": "양양군",
+        "emdName": "손양면",
+        "stationName": "손양면사전투표소",
+        "buildingName": "손양초등학교 손양관(1층)",
+        "address": "강원특별자치도 양양군 손양면 손중로 202",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521003&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양양군",
+        "sggName": "양양군",
+        "emdName": "현북면",
+        "stationName": "현북면사전투표소",
+        "buildingName": "광정초등학교 하조관(1층)",
+        "address": "강원특별자치도 양양군 현북면 하조대1길 38",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521004&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양양군",
+        "sggName": "양양군",
+        "emdName": "현남면",
+        "stationName": "현남면사전투표소",
+        "buildingName": "현남면복지회관(1층)",
+        "address": "강원특별자치도 양양군 현남면 인구중앙길 46-84",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521005&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양양군",
+        "sggName": "양양군",
+        "emdName": "강현면",
+        "stationName": "강현면사전투표소",
+        "buildingName": "강현면복지회관(1층)",
+        "address": "강원특별자치도 양양군 강현면 물치천로 23",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521006&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "인제군",
+        "sggName": "인제군",
+        "emdName": "인제읍",
+        "stationName": "인제읍사전투표소",
+        "buildingName": "인제체육관(1층)",
+        "address": "강원특별자치도 인제군 인제읍 비봉로44번길 113",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521101&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "인제군",
+        "sggName": "인제군",
+        "emdName": "남면",
+        "stationName": "남면사전투표소",
+        "buildingName": "남면복합문화센터(2층, 다목적실)",
+        "address": "강원특별자치도 인제군 남면 신남리 334-6",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521102&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "인제군",
+        "sggName": "인제군",
+        "emdName": "북면",
+        "stationName": "북면사전투표소",
+        "buildingName": "원통종합복지타운 별관(1층, 피로연장)",
+        "address": "강원특별자치도 인제군 북면 금강로 62",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521103&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "인제군",
+        "sggName": "인제군",
+        "emdName": "기린면",
+        "stationName": "기린면사전투표소",
+        "buildingName": "기린실내체육관(1층)",
+        "address": "강원특별자치도 인제군 기린면 덕다리길 47-9",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521104&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "인제군",
+        "sggName": "인제군",
+        "emdName": "서화면",
+        "stationName": "서화면사전투표소",
+        "buildingName": "서화평화체육관(1층)",
+        "address": "강원특별자치도 인제군 서화면 천도리 454-3",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521105&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "인제군",
+        "sggName": "인제군",
+        "emdName": "상남면",
+        "stationName": "상남면사전투표소",
+        "buildingName": "상남면종합복지회관(2층, 다목적실) (구 상남복지센터)",
+        "address": "강원특별자치도 인제군 상남면 상남로38번길 6",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521106&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "홍천읍",
+        "stationName": "홍천읍사전투표소",
+        "buildingName": "홍천읍행정복지센터(3층, 대회의실)",
+        "address": "강원특별자치도 홍천군 홍천읍 홍천로 351",
+        "facilities": [
+            "승강기 등",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521201&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "화촌면",
+        "stationName": "화촌면사전투표소",
+        "buildingName": "화촌면복지회관(1층)",
+        "address": "강원특별자치도 홍천군 화촌면 성산로134번길 11",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521202&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "두촌면",
+        "stationName": "두촌면사전투표소",
+        "buildingName": "두촌면복지회관(1층)",
+        "address": "강원특별자치도 홍천군 두촌면 자은로 383",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521203&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "내촌면",
+        "stationName": "내촌면사전투표소",
+        "buildingName": "내촌면복지회관(1층)",
+        "address": "강원특별자치도 홍천군 내촌면 내촌길 27-1",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521204&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "서석면",
+        "stationName": "서석면사전투표소",
+        "buildingName": "풍암1리노인회관(1층)",
+        "address": "강원특별자치도 홍천군 서석면 구룡령로 2533-9",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521205&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "영귀미면",
+        "stationName": "영귀미면사전투표소",
+        "buildingName": "영귀미면생활체육공원(1층, 다목적실)",
+        "address": "강원특별자치도 홍천군 영귀미면 공작산로 456",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521211&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "남면",
+        "stationName": "남면제1사전투표소",
+        "buildingName": "남면생활체육공원(1층, 다목적실)",
+        "address": "강원특별자치도 홍천군 남면 양덕원로 221",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521207&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "남면",
+        "stationName": "남면제2사전투표소",
+        "buildingName": "남면복지회관(1층, 다목적실)",
+        "address": "강원특별자치도 홍천군 남면 시동안로 271",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521207&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "서면",
+        "stationName": "서면사전투표소",
+        "buildingName": "서면종합체육관(1층)",
+        "address": "강원특별자치도 홍천군 서면 반곡리 227",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521208&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "북방면",
+        "stationName": "북방면사전투표소",
+        "buildingName": "북방면복지회관(1층)",
+        "address": "강원특별자치도 홍천군 북방면 두개비산로 311-20",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521209&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "홍천군",
+        "sggName": "홍천군",
+        "emdName": "내면",
+        "stationName": "내면사전투표소",
+        "buildingName": "내면다목적회관(1층)",
+        "address": "강원특별자치도 홍천군 내면 창촌로 63",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521210&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "횡성읍",
+        "stationName": "횡성읍사전투표소",
+        "buildingName": "횡성읍행정복지센터(1층, 대회의실)",
+        "address": "강원특별자치도 횡성군 횡성읍 태기로 85",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521301&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "우천면",
+        "stationName": "우천면사전투표소",
+        "buildingName": "우천면복지회관(1층, 우민관)",
+        "address": "강원특별자치도 횡성군 우천면 수남로 338-2",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521302&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "안흥면",
+        "stationName": "안흥면사전투표소",
+        "buildingName": "안흥면다목적센터(1층, 다목적실)",
+        "address": "강원특별자치도 횡성군 안흥면 안흥동길 6",
+        "facilities": [
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521303&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "둔내면",
+        "stationName": "둔내면사전투표소",
+        "buildingName": "둔내복합체육센터(1층, 실내체육관)",
+        "address": "강원특별자치도 횡성군 둔내면 경강로 4708",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521304&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "갑천면",
+        "stationName": "갑천면사전투표소",
+        "buildingName": "갑천종합복지센터(1층, 다목적실)",
+        "address": "강원특별자치도 횡성군 갑천면 청정로매일5길 2",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521305&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "청일면",
+        "stationName": "청일면사전투표소",
+        "buildingName": "청일복지체육센터(1층, 식당)",
+        "address": "강원특별자치도 횡성군 청일면 청정로 822",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521306&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "공근면",
+        "stationName": "공근면사전투표소",
+        "buildingName": "공근어울림타운(1층, 다목적실)",
+        "address": "강원특별자치도 횡성군 공근면 영서로학담5길 7",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521307&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "서원면",
+        "stationName": "서원면사전투표소",
+        "buildingName": "서원면문화복지센터(1층, 대강당)",
+        "address": "강원특별자치도 횡성군 서원면 서원로 136",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521308&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "횡성군",
+        "sggName": "횡성군",
+        "emdName": "강림면",
+        "stationName": "강림면사전투표소",
+        "buildingName": "각림건강복지센터(1층, 다목적실)",
+        "address": "강원특별자치도 횡성군 강림면 강림시장길 13",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521309&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "영월읍",
+        "stationName": "영월읍사전투표소",
+        "buildingName": "영월군문화예술회관(1층, 전시실)",
+        "address": "강원특별자치도 영월군 영월읍 단종로 24",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521401&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "상동읍",
+        "stationName": "상동읍사전투표소",
+        "buildingName": "영월청소년장학센터(1층, 다목적실)",
+        "address": "강원특별자치도 영월군 상동읍 태백산로 3197",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521402&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "산솔면",
+        "stationName": "산솔면사전투표소",
+        "buildingName": "산솔면복합체육센터(1층, 체육관)",
+        "address": "강원특별자치도 영월군 산솔면 응고개길 8-15",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521411&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "김삿갓면",
+        "stationName": "김삿갓면사전투표소",
+        "buildingName": "김삿갓면문화복지센터(1층, 강당)",
+        "address": "강원특별자치도 영월군 김삿갓면 영월동로 1644",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521404&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "북면",
+        "stationName": "북면사전투표소",
+        "buildingName": "삼방회관(1층, 연회장)",
+        "address": "강원특별자치도 영월군 북면 봉래산로 987-1",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521405&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "남면",
+        "stationName": "남면사전투표소",
+        "buildingName": "남면별빛어울림센터(1층, 다목적강당)",
+        "address": "강원특별자치도 영월군 남면 연당로 61",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521406&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "한반도면",
+        "stationName": "한반도면사전투표소",
+        "buildingName": "청송회관(1층, 식당)",
+        "address": "강원특별자치도 영월군 한반도면 서강로 793",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521407&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "주천면",
+        "stationName": "주천면사전투표소",
+        "buildingName": "영월군청소년문화의집(1층, 강당)",
+        "address": "강원특별자치도 영월군 주천면 주천로89번길 33-14",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521408&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "영월군",
+        "sggName": "영월군",
+        "emdName": "무릉도원면",
+        "stationName": "무릉도원면사전투표소",
+        "buildingName": "무릉도원면복지회관(1층, 회의실)",
+        "address": "강원특별자치도 영월군 무릉도원면 중방안길 77",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521410&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "평창읍",
+        "stationName": "평창읍사전투표소",
+        "buildingName": "평창읍사무소(1층,회의실)",
+        "address": "강원특별자치도 평창군 평창읍 백오로 177 평창읍사무소(1층, 회의실)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521501&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "미탄면",
+        "stationName": "미탄면사전투표소",
+        "buildingName": "미탄체육관(1층)",
+        "address": "강원특별자치도 평창군 미탄면 청옥산1길 20 미탄체육관(1층)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521502&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "방림면",
+        "stationName": "방림면사전투표소",
+        "buildingName": "방림면복지회관(1층)",
+        "address": "강원특별자치도 평창군 방림면 서동로 1338-3",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521503&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "대화면",
+        "stationName": "대화면사전투표소",
+        "buildingName": "대화문화체육관(1층)",
+        "address": "강원특별자치도 평창군 대화면 대화1길 28-5 대화문화체육관(1층)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521504&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "봉평면",
+        "stationName": "봉평면사전투표소",
+        "buildingName": "봉평생활체육관(1층)",
+        "address": "강원특별자치도 평창군 봉평면 애강나무길 36",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521505&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "용평면",
+        "stationName": "용평면사전투표소",
+        "buildingName": "금송회관(1층)",
+        "address": "강원특별자치도 평창군 용평면 갈정지길 10 금송회관(1층)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521506&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "진부면",
+        "stationName": "진부면사전투표소",
+        "buildingName": "평창송어종합공연체험장(1층,공연장)",
+        "address": "강원특별자치도 평창군 진부면 경강로 3554 평창송어종합공연체험장(1층,공연장)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521507&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "평창군",
+        "sggName": "평창군",
+        "emdName": "대관령면",
+        "stationName": "대관령면사전투표소",
+        "buildingName": "대관령면사무소(1층, 종합상황실)",
+        "address": "강원특별자치도 평창군 대관령면 대관령로 83 대관령면사무소(1층, 종합상황실)",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521508&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "화천군",
+        "sggName": "화천군",
+        "emdName": "화천읍",
+        "stationName": "화천읍사전투표소",
+        "buildingName": "화천청소년수련관(1층, 소공연장)",
+        "address": "강원특별자치도 화천군 화천읍 산천어길 79",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521601&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "화천군",
+        "sggName": "화천군",
+        "emdName": "간동면",
+        "stationName": "간동면사전투표소",
+        "buildingName": "바로파로센터(1층, 교육장)",
+        "address": "강원특별자치도 화천군 간동면 파로호로 917",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521602&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "화천군",
+        "sggName": "화천군",
+        "emdName": "하남면",
+        "stationName": "하남면사전투표소",
+        "buildingName": "화천군여성회관(1층,다목적실)",
+        "address": "강원특별자치도 화천군 하남면 춘화로 3341",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521603&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "화천군",
+        "sggName": "화천군",
+        "emdName": "상서면",
+        "stationName": "상서면제1사전투표소",
+        "buildingName": "DMZ시네마(1층,스포츠센터)",
+        "address": "강원특별자치도 화천군 상서면 영서로 7739",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521604&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "화천군",
+        "sggName": "화천군",
+        "emdName": "상서면",
+        "stationName": "상서면제2사전투표소",
+        "buildingName": "다목리주민센터(1층,다목적실)",
+        "address": "강원특별자치도 화천군 상서면 수피령로 1313",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521604&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "화천군",
+        "sggName": "화천군",
+        "emdName": "사내면",
+        "stationName": "사내면사전투표소",
+        "buildingName": "사내종합문화센터(1층, 예식장)",
+        "address": "강원특별자치도 화천군 사내면 수피령로 71",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521605&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "양구군",
+        "sggName": "양구군",
+        "emdName": "양구읍",
+        "stationName": "양구읍사전투표소",
+        "buildingName": "양구문예회관(1층, 세미나실1)",
+        "address": "강원특별자치도 양구군 양구읍 비봉로73번길 52-1",
+        "facilities": [
+            "도움벨",
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521701&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양구군",
+        "sggName": "양구군",
+        "emdName": "국토정중앙면",
+        "stationName": "국토정중앙면사전투표소",
+        "buildingName": "국토정중앙면 종합복지회관(1층, 피로연장)",
+        "address": "강원특별자치도 양구군 국토정중앙면 삼팔선로 15",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521706&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양구군",
+        "sggName": "양구군",
+        "emdName": "동면",
+        "stationName": "동면사전투표소",
+        "buildingName": "동면복지회관(1층, 식당)",
+        "address": "강원특별자치도 양구군 동면 금강산로 1699",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521703&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양구군",
+        "sggName": "양구군",
+        "emdName": "방산면",
+        "stationName": "방산면사전투표소",
+        "buildingName": "방산면종합복지회관(1층, 세미나실)",
+        "address": "강원특별자치도 양구군 방산면 평화로 5137",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521704&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "양구군",
+        "sggName": "양구군",
+        "emdName": "해안면",
+        "stationName": "해안면사전투표소",
+        "buildingName": "해안면사무소(1층, 대회의실)",
+        "address": "강원특별자치도 양구군 해안면 펀치볼로 1307",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521705&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "철원읍",
+        "stationName": "철원읍사전투표소",
+        "buildingName": "철원종합문화복지센터(1층, 농민문화체육센터)",
+        "address": "강원특별자치도 철원군 철원읍 금학로330번길 12",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521801&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "김화읍",
+        "stationName": "김화읍사전투표소",
+        "buildingName": "김화게이트볼장(1층)",
+        "address": "강원특별자치도 철원군 김화읍 김화로 609-23",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521802&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "갈말읍",
+        "stationName": "갈말읍제1사전투표소",
+        "buildingName": "철원실내체육관(1층)",
+        "address": "강원특별자치도 철원군 갈말읍 갈말로 75",
+        "facilities": [
+            "점자유도블럭",
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521803&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "갈말읍",
+        "stationName": "갈말읍제2사전투표소",
+        "buildingName": "문혜초등학교 문혜어울터(1층, 체육관)",
+        "address": "강원특별자치도 철원군 갈말읍 태봉로 1556",
+        "facilities": [
+            "장애인화장실"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521803&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "동송읍",
+        "stationName": "동송읍사전투표소",
+        "buildingName": "동송체육관(1층, 배드민턴장)",
+        "address": "강원특별자치도 철원군 동송읍 이평3로 154-21",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521804&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "서면",
+        "stationName": "서면제1사전투표소",
+        "buildingName": "와수체육관(1층, 배드민턴장)",
+        "address": "강원특별자치도 철원군 서면 약수로 13",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521805&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "서면",
+        "stationName": "서면제2사전투표소",
+        "buildingName": "자등게이트볼장(1층)",
+        "address": "강원특별자치도 철원군 서면 신술2길 40-1",
+        "facilities": [
+            "점자유도블럭"
+        ],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521805&tpgid=2&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "근남면",
+        "stationName": "근남면사전투표소",
+        "buildingName": "김화농협 미곡처리장(1층, 군납유통센터)",
+        "address": "강원특별자치도 철원군 근남면 와수로 486",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521806&tpgid=1&tp_gb=2"
+    },
+    {
+        "townName": "철원군",
+        "sggName": "철원군",
+        "emdName": "근북면",
+        "stationName": "근북면사전투표소",
+        "buildingName": "유곡리마을 건강관리실(1층)",
+        "address": "강원특별자치도 철원군 근북면 유곡로 513-8",
+        "facilities": [],
+        "isTemporary": "-",
+        "mapUrl": "http://e-doumi.nec.go.kr/map/nec_map.jsp?sg_id=20260603&emdid=521807&tpgid=1&tp_gb=2"
+    }
+];
+
+        // 시·군별 더불어민주당 시장·군수 후보 정보
+        const candidates = [
+            { city: '춘천시', name: '육동한', photo: '춘천 육동한.png' },
+            { city: '원주시', name: '구자열', photo: '원주 구자열.png' },
+            { city: '강릉시', name: '김중남', photo: '강릉 김중남.png' },
+            { city: '동해시', name: '이정학', photo: '동해 이정학.png' },
+            { city: '삼척시', name: '이정훈', photo: '삼척 이정훈.png' },
+            { city: '태백시', name: '김동구', photo: '태백 김동구.png' },
+            { city: '속초시', name: '김철수', photo: '속초 김철수.png' },
+            { city: '홍천군', name: '박승영', photo: '홍천 박승영.png' },
+            { city: '횡성군', name: '장신상', photo: '횡성 장신상.png' },
+            { city: '영월군', name: '박선규', photo: '영월 박선규.png' },
+            { city: '평창군', name: '한왕기', photo: '평창 한왕기.png' },
+            { city: '정선군', name: '최승준', photo: '정선 최승준.png' },
+            { city: '철원군', name: '한금석', photo: '철원 한금석.png' },
+            { city: '화천군', name: '김세훈', photo: '화천 김세훈.png' },
+            { city: '양구군', name: '김왕규', photo: '양구 김왕규.png' },
+            { city: '인제군', name: '최상기', photo: '인제 최상기.png' },
+            { city: '고성군', name: '함명준', photo: '고성 함명준.png' },
+            { city: '양양군', name: '김정중', photo: '양양 김정중.png' }
+        ];
+
+        // 현재 선택된 도시
+        let activeCity = 'all';
+
+        function selectCity(city) {
+            activeCity = city;
+            document.querySelectorAll('#cityGrid .city-tile').forEach(t => {
+                t.classList.toggle('active', t.dataset.city === city);
+            });
+
+            const titleEl = document.getElementById('resultTitle');
+            if (titleEl) titleEl.textContent = city === 'all' ? '전체 사전투표소' : `${city} 사전투표소`;
+
+            filterStations();
+
+            const headerEl = document.querySelector('main.container');
+            if (headerEl) headerEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function renderTeamGallery() {
+            const grid = document.getElementById('teamGrid');
+            if (!grid) return;
+            grid.innerHTML = candidates.map(c => `
+                <button class="team-card" data-city="${c.city}" aria-label="${c.city} ${c.name} 후보 — 사전투표소 보기">
+                    <img src="${encodeURI('./' + c.photo)}" alt="${c.city} ${c.name} 후보" class="team-photo" loading="lazy">
+                    <div class="team-overlay">
+                        <div class="team-overlay-text">${c.city} 투표소 보기 <span aria-hidden="true">→</span></div>
+                    </div>
+                </button>
+            `).join('');
+            grid.querySelectorAll('.team-card').forEach(card => {
+                card.addEventListener('click', () => selectCity(card.dataset.city));
+            });
+        }
+
+        function renderCityGrid() {
+            const grid = document.getElementById('cityGrid');
+            if (!grid) return;
+
+            const allCount = prevoteStations.length;
+            const allTile = `
+                <button class="city-tile all active" data-city="all">
+                    <div class="tile-text">
+                        <div class="city-name">전체 보기</div>
+                        <div class="city-candidate">강원 18개 시·군</div>
+                        <div class="city-count">${allCount}개 투표소</div>
+                    </div>
+                </button>
+            `;
+
+            const cityTiles = candidates.map(c => {
+                const cnt = prevoteStations.filter(s => s.sggName === c.city).length;
+                return `
+                    <button class="city-tile" data-city="${c.city}">
+                        <div class="tile-text">
+                            <div class="city-name">${c.city}</div>
+                            <div class="city-candidate">기호 1번 ${c.name}</div>
+                            <div class="city-count">${cnt}개 투표소</div>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+
+            grid.innerHTML = allTile + cityTiles;
+
+            grid.querySelectorAll('.city-tile').forEach(tile => {
+                tile.addEventListener('click', () => selectCity(tile.dataset.city));
+            });
+        }
+
+        // ── D-Day 카운트다운 (사전투표 시작: 2026-05-29 06:00 / 종료: 05-30 18:00 / 본투표: 06-03 06:00) ──
+        function updateCountdown() {
+            const now = new Date();
+            const preStart = new Date('2026-05-29T06:00:00+09:00');
+            const preEnd   = new Date('2026-05-30T18:00:00+09:00');
+            const mainDay  = new Date('2026-06-03T06:00:00+09:00');
+
+            let target, label, status = null;
+            if (now < preStart) {
+                target = preStart;
+                label = '사전투표 시작까지';
+            } else if (now < preEnd) {
+                target = preEnd;
+                label = '사전투표 종료까지';
+                status = '사전투표 진행 중';
+            } else if (now < mainDay) {
+                target = mainDay;
+                label = '본투표까지';
+            } else {
+                document.getElementById('ddayText').textContent = '제9회 전국동시지방선거';
+                document.getElementById('ddayTimer').innerHTML = '<div style="font-size:1.2rem;font-weight:700;padding:0.5rem 1rem;">투표가 종료되었습니다</div>';
+                return;
+            }
+
+            const diff = target - now;
+            const days  = Math.floor(diff / 86400000);
+            const hours = Math.floor((diff % 86400000) / 3600000);
+            const mins  = Math.floor((diff % 3600000) / 60000);
+            const secs  = Math.floor((diff % 60000) / 1000);
+
+            const pad = n => String(n).padStart(2, '0');
+            document.getElementById('ddayText').textContent = label;
+            document.getElementById('ddayDays').textContent  = pad(days);
+            document.getElementById('ddayHours').textContent = pad(hours);
+            document.getElementById('ddayMins').textContent  = pad(mins);
+            document.getElementById('ddaySecs').textContent  = pad(secs);
+
+            const statusEl = document.getElementById('ddayStatus');
+            if (status) {
+                statusEl.style.display = 'inline-flex';
+                document.getElementById('ddayStatusText').textContent = status;
+            } else {
+                statusEl.style.display = 'none';
+            }
+        }
+
+        // ── 공유 기능 ──
+        function setupShare() {
+            const trigger = document.getElementById('shareTrigger');
+            const menu = document.getElementById('shareMenu');
+            const toast = document.getElementById('toast');
+
+            const showToast = (msg) => {
+                toast.textContent = msg;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2200);
+            };
+
+            const url = window.location.href;
+            const title = document.title;
+            const text = '강원도가 특별해지는 순간 — 사전투표 5.29(금)~5.30(토). 우리 동네 사전투표소 한 번에 확인하세요.';
+
+            trigger.addEventListener('click', async () => {
+                // 모바일에서 Web Share API 사용 가능하면 네이티브 시트 (카톡 포함됨)
+                if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
+                    try {
+                        await navigator.share({ title, text, url });
+                        return;
+                    } catch (e) { /* 사용자 취소 등 */ }
+                }
+                const open = menu.classList.toggle('open');
+                trigger.classList.toggle('open', open);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!trigger.contains(e.target) && !menu.contains(e.target)) {
+                    menu.classList.remove('open');
+                    trigger.classList.remove('open');
+                }
+            });
+
+            menu.querySelectorAll('.share-item').forEach(item => {
+                item.addEventListener('click', async () => {
+                    const type = item.dataset.share;
+                    if (type === 'link') {
+                        try {
+                            await navigator.clipboard.writeText(url);
+                            showToast('✓ 링크가 복사되었습니다');
+                        } catch (e) {
+                            showToast('링크 복사에 실패했습니다');
+                        }
+                    } else if (type === 'facebook') {
+                        window.open(
+                            `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+                            'fb-share', 'width=600,height=500'
+                        );
+                    } else if (type === 'kakao') {
+                        // Kakao SDK 미적재 환경 대비 — 카카오스토리 공유 URL로 폴백, 동시에 링크 복사 안내
+                        try { await navigator.clipboard.writeText(url); } catch (e) {}
+                        const kakaoStory = `https://story.kakao.com/share?url=${encodeURIComponent(url)}`;
+                        window.open(kakaoStory, 'kakao-share', 'width=600,height=600');
+                        showToast('✓ 링크 복사됨 — 카톡 채팅창에 붙여넣으세요');
+                    }
+                    menu.classList.remove('open');
+                    trigger.classList.remove('open');
+                });
+            });
+        }
+
+        // ── 스크롤 페이드인 (IntersectionObserver) ──
+        function setupRevealObserver() {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderTeamGallery();
+            renderStations(prevoteStations);
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            setupShare();
+            setupRevealObserver();
+        });
+
+        // 렌더링 함수
+        function renderStations(stations) {
+            const grid = document.getElementById('stationsGrid');
+            const countSpan = document.getElementById('countSpan');
+            const noResults = document.getElementById('noResults');
+            
+            // 기존 카드들 삭제 (no-results 엘리먼트는 보존)
+            const cards = grid.querySelectorAll('.station-card');
+            cards.forEach(card => card.remove());
+            
+            countSpan.innerText = stations.length;
+            
+            if (stations.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            noResults.style.display = 'none';
+            
+            stations.forEach(st => {
+                const card = document.createElement('div');
+                card.className = 'station-card';
+                
+                // 편의시설 배지 생성
+                let facilityBadgesHtml = '';
+                if (st.facilities && st.facilities.length > 0) {
+                    st.facilities.forEach(fac => {
+                        const isElevator = fac.includes('승강기') || fac.includes('엘리베이터');
+                        const badgeClass = isElevator ? 'facility-badge elevator' : 'facility-badge';
+                        facilityBadgesHtml += `<span class="${badgeClass}">${fac}</span>`;
+                    });
+                }
+                
+                card.innerHTML = `
+                    <div class="card-top">
+                        <div class="card-region">${st.sggName} · ${st.emdName}</div>
+                        <h3 class="card-title">${st.stationName}</h3>
+                        <div class="card-building">${st.buildingName}</div>
+
+                        <div class="card-info">
+                            <span class="card-info-icon">·</span>
+                            <span>${st.address}</span>
+                        </div>
+
+                        ${facilityBadgesHtml ? `<div class="facility-badges">${facilityBadgesHtml}</div>` : ''}
+                    </div>
+                    <div class="card-actions">
+                        ${st.mapUrl ? `<a href="${st.mapUrl}" target="_blank" rel="noopener noreferrer" class="btn-map">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            약도 보기
+                        </a>` : ''}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 필터링 동작
+        function filterStations() {
+            const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+            const clearBtn = document.getElementById('clearSearch');
+            if (clearBtn) clearBtn.classList.toggle('visible', searchInput.length > 0);
+
+            const filtered = prevoteStations.filter(st => {
+                const matchesCity = (activeCity === 'all' || st.sggName === activeCity);
+                const matchesSearch = !searchInput ||
+                    st.emdName.toLowerCase().includes(searchInput) ||
+                    st.stationName.toLowerCase().includes(searchInput) ||
+                    st.buildingName.toLowerCase().includes(searchInput) ||
+                    st.address.toLowerCase().includes(searchInput);
+                return matchesCity && matchesSearch;
+            });
+
+            renderStations(filtered);
+        }
+
+        // 검색어 지우기
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            filterStations();
+            document.getElementById('searchInput').focus();
+        }
+    </script>
+</body>
+</html>
